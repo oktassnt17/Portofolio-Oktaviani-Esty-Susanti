@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates | Oktaviani Esty Susanti</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2980b9;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .logo h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .certificates {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .certificates h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            font-size: 30px;
+        }
+        .certificate-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .certificate-item {
+            flex: 1 1 calc(33.333% - 20px);
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            overflow: hidden; /* Menjaga agar gambar tidak melebihi kontainer */
+        }
+
+        .certificate-item img {
+            width: 100%; /* Sesuaikan lebar gambar dengan kontainer */
+            height: 300px; /* Tingkatkan tinggi gambar */
+            object-fit: cover; /* Pangkas gambar untuk memenuhi kontainer tanpa merusak proporsi */
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .certificate-item h3 {
+            font-size: 1.2rem;
+            color: #2c3e50;
+        }
+        .certificate-item p {
+            font-size: 1rem;
+            color: #555;
+            margin: 10px 0 20px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #1a5d80;
+        }
+        footer {
+            background-color: #2980b9;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #1a5d80;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .certificate-item {
+                flex: 1 1 100%;
+            }
+            .btn {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Oktaviani Esty Susanti</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="infografis.html">Infographics</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="certificates">
+        <h2>My Certificates</h2>
+        <div class="certificate-grid">
+            <div class="certificate-item">
+                <img src="Statistician.jpg" alt="Certificate 1">
+                <h3>Statistician</h3>
+                <a href="Statistician.pdf" class="btn" target="_blank">View Certificate</a>
+            </div>
+            <div class="certificate-item">
+                <img src="DQLAB Data Scientist.jpg" alt="Certificate 2">
+                <h3>Data Science Fundamentals</h3>
+                <a href="DQLAB Data Scientist.pdf" class="btn" target="_blank">View Certificate</a>
+            </div>
+            <div class="certificate-item">
+                <img src="Data Scientist.jpg" alt="Certificate 3">
+                <h3>Data Science</h3>
+                <a href="Data Scientist.pdf" class="btn" target="_blank">View Certificate</a>
+            </div>
+            <div class="certificate-item">
+                <img src="Quiz Basic Excel.jpg" alt="Certificate 4">
+                <h3>Quiz Basic Excel</h3>
+                <a href="Quiz Basic Excel.pdf" class="btn" target="_blank">View Certificate</a>
+            </div>
+            <div class="certificate-item">
+                <img src="Learning Data Analytics.jpg" alt="Certificate 5">
+                <h3>Learning Data Analytics</h3>
+                <a href="Learning Data Analytics.pdf" class="btn" target="_blank">View Certificate</a>
+            </div>
+            <div class="certificate-item">
+                <img src="Introduction to Data Studio.jpg" alt="Certificate 6">
+                <h3>Introduction to Data Studio</h3>
+                <a href="Introduction to Data Studio.pdf" class="btn" target="_blank">View Certificate</a>
+            </div>
+            <!-- Add more certificates as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Oktaviani Esty Susanti. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/oktaviani-esty-susanti-721b1731a/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://wa.me/+6281238084622" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:oktassnt17@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

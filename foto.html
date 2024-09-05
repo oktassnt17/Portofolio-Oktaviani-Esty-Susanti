@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <style>
+        /* Reset default margin and padding */
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Styling */
+        header {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: #2980b9;
+            padding: 10px 20px;
+            width: 100%; /* Memastikan navbar mengisi seluruh lebar layar */
+            box-sizing: border-box; /* Memastikan padding dan border termasuk dalam lebar total */
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 1.1rem;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #ff6347;
+        }
+
+        /* Photography Portfolio Styling */
+        .photo-gallery {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .photo-gallery h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .grid-item img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2980b9;
+            color: #fff;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="creator.html">Creator</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="photo-gallery">
+            <h1>Photography Portfolio</h1>
+            <div class="grid-container">
+                <div class="grid-item"><img src="WED05204.jpg" alt="Photo 1"></div>
+                <div class="grid-item"><img src="WED05305.jpg" alt="Photo 2"></div>
+                <div class="grid-item"><img src="WED05308.jpg" alt="Photo 3"></div>
+                <div class="grid-item"><img src="MEITU_20240811_204128036.jpg" alt="Photo 4"></div>
+                <div class="grid-item"><img src="WED05250.jpg" alt="Photo 5"></div>
+                <div class="grid-item"><img src="WED05352.jpg" alt="Photo 6"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fernanda Sugiwa Darmawan. All rights reserved.</p>
+    </footer>
+</body>
+</html>

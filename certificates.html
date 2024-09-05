@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernanda Sugiwa Darmawan | Creator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #2980b9; /* Warna background navbar */
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .logo h1 {
+            margin: 0;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-links li {
+            position: relative;
+        }
+        .nav-links li a {
+            color: white; /* Warna teks navbar */
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #34495e; /* Warna background dropdown */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            z-index: 1000;
+        }
+        .nav-links li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu li {
+            list-style: none;
+        }
+        .dropdown-menu li a {
+            color: #ecf0f1; /* Warna teks dropdown */
+            padding: 10px 20px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+        .dropdown-menu li a:hover {
+            background-color: #2980b9; /* Warna background saat hover dropdown */
+        }
+        .project-item {
+            margin-bottom: 40px;
+        }
+        .project-item img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .project-item .image-gallery {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .project-item .image-gallery img {
+            flex: 1;
+            border-radius: 8px;
+            object-fit: cover;
+            height: 200px;
+        }
+        .swiper-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        .swiper-wrapper {
+            display: flex;
+        }
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+        .swiper-slide img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .swiper-pagination-bullet {
+            background: #2980b9;
+        }
+        .swiper-button-next, .swiper-button-prev {
+            color: #2980b9;
+        }
+        footer {
+            background-color: #2980b9; /* Warna background footer */
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 5px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Fernanda Sugiwa Darmawan</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Creator</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="video.html">Videography</a></li>
+                        <li><a href="foto.html">Photography</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="creator" class="creator">
+        <h2 style="text-align: center; font-size: 2.5rem; color: #2c3e50; margin-bottom: 1.5rem;">Content Creator</h2>
+        <div style="max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f8f9fa; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <p style="font-size: 1.2rem; line-height: 1.6; color: #333;">
+                I specialize in creating engaging and educational content for social media. Below are some examples that I have created.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 style="text-align: center; font-size: 2.5rem; color: #2c3e50; margin-bottom: 1.5rem;">Skills</h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <h3>Social Media Specialist</h3>
+                <p>Social media processor.</p>
+                <a href="#tiktok-content" class="btn">View Medsos Specialist</a>
+                <div class="image-gallery">
+                    <img src="Medsosspesialist.png" alt="Videography Post 1">
+                </div>
+            </div>
+            <div class="project-item">
+                <h3>Videography</h3>
+                <p>Video Content Creation.</p>
+                <a href="#videography-content" class="btn">View Videography Content</a>
+                <div class="image-gallery">
+                    <img src="Videography.png" alt="Videography Post 1">
+                </div>
+            </div>
+            <div class="project-item">
+                <h3>Design & Photo</h3>
+                <p>Collaborated with a tech.</p>
+                <a href="#design-content" class="btn">View Design & Photo</a>
+                <div class="image-gallery">
+                    <img src="Desain.png" alt="Design Post 1">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tiktok-content" class="tiktok-content">
+        <h2 style="text-align: center; font-size: 2.5rem; color: #2c3e50; margin-bottom: 1.5rem;">Social Media Specialist</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="rnd coba.png" alt="Analist Content">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Hasil.png" alt="TikTok Content 2">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section id="videography-content" class="videography-content">
+        <h2 style="text-align: center; font-size: 2.5rem; color: #2c3e50; margin-bottom: 1.5rem;">
+            Videography
+        </h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="RndVideo.png" alt="Videography Content 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Ediprimerpro.png" alt="Videography Content 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Editcapcut.png" alt="Videography Content 3">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section id="design-content" class="design-content">
+        <h2 style="text-align: center; font-size: 2.5rem; color: #2c3e50; margin-bottom: 1.5rem;">
+            Design & Photo
+        </h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="Design.png" alt="Design Content 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="hasildesain.png" alt="Design Content 2">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fernanda Sugiwa Darmawan. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 2000,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>

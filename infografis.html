@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Infographics | Oktaviani Esty Susanti</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        header {
+            background-color: #2980b9;
+            color: #fff;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .logo h1 {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #2980b9;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+            bottom: 0;
+        }
+        
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #2980b9;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 700px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 80px; /* Adjust margin-top to prevent overlap with fixed header */
+            margin-bottom: 80px; /* Adjust margin-bottom to prevent overlap with fixed footer */
+        }
+
+        h2 {
+            color: #fff;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            background-color: #2980b9; /* Blue background color */
+            padding: 15px 20px; /* Space around the text */
+            border-radius: 10px; /* Oval effect */
+            display: inline-block; /* Ensure the background fits the text */
+        }
+
+        .infografis {
+            position: relative;
+            width: 100%;
+            max-width: 700px;
+        }
+
+        .infografis img {
+            width: 100%;
+            border-radius: 10px;
+            display: none; /* Hide all images initially */
+        }
+
+        .infografis img.active {
+            display: block; /* Show only the active image */
+        }
+
+        .controls {
+            margin-top: 10px;
+        }
+
+        .button {
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Oktaviani Esty Susanti</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="sertifikat.html">Certificates</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Infographic</h2>
+        <div class="infografis">
+            <img src="Infografis SIC.png" alt="infografis Page 1" class="active">
+            <img src="Infografis Prostok.jpg" alt="infografis Page 2">
+            <img src="Infografis ARW.jpg" alt="infografis Page 3">
+            <img src="Infografis KCDA.png" alt="infografis Page 4">
+            <img src="Infografis SKD.png" alt="infografis Page 5">
+        </div>
+        <div class="controls">
+            <button class="button" onclick="changeSlide(-1)">Previous</button>
+            <button class="button" onclick="changeSlide(1)">Next</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Oktaviani Esty Susanti. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/oktaviani-esty-susanti-721b1731a/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://wa.me/+6281238084622" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:oktassnt17@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.infografis img');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) {
+                    slide.classList.add('active');
+                }
+            });
+        }
+
+        function changeSlide(direction) {
+            currentSlide += direction;
+            if (currentSlide < 0) {
+                currentSlide = slides.length - 1; // Wrap around to the last slide
+            } else if (currentSlide >= slides.length) {
+                currentSlide = 0; // Wrap around to the first slide
+            }
+            showSlide(currentSlide);
+        }
+
+        // Initial display
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>

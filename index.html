@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oktaviani Esty Susanti | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Link to Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2980b9;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .logo h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            position: relative;
+            width: 1004px; /* Sesuaikan dengan lebar gambar */
+            height: 591px; /* Sesuaikan dengan tinggi gambar */
+            margin: 0 auto; /* Memusatkan container di tengah */
+            overflow: hidden;
+        }
+        .swiper-container {
+            width: 100%; /* Mengambil seluruh lebar .hero */
+            height: 100%; /* Mengambil seluruh tinggi .hero */
+        }
+        .swiper-slide img {
+            width: 100%; /* Mengambil seluruh lebar slide */
+            height: 100%; /* Mengambil seluruh tinggi slide */
+            object-fit: cover; /* Menjaga aspek rasio gambar */
+        }
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            color: #fff;
+            text-align: center;
+        }
+        .hero-content h2 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        .hero-content p {
+            font-size: 1.2rem;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #216e9c;
+        }
+        .about, .projects, .contact {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .about h2, .projects h2, .contact h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .about div {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .about div:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .project-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .project-item {
+            flex: 1 1 calc(33.333% - 20px);
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .contact-options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        .contact-link:hover {
+            color: #f0f0f0; /* Lighter color on hover for better visibility */
+        }
+        footer {
+            background-color: #2980b9;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #2980b9;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .hero-content h2 {
+                font-size: 2rem;
+            }
+            .hero-content p {
+                font-size: 1rem;
+            }
+            .project-item {
+                flex: 1 1 100%;
+            }
+            .btn {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Oktaviani Esty Susanti</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <img src="Profil.jpg" alt="Project 1">
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <img src="Data Enthusiast.jpg" alt="Project 2">
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <img src="Administrative.jpg" alt="Project 3">
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h2>Welcome to My Portofolio</h2>
+            <p>I am Oktaviani Esty Susanti, have a great interest in data analyst, data scientist, business analysis, programming, and administrative.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+    
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div>
+            <p>Hello! I am <span style="font-weight: bold;">Oktaviani Esty Susanti</span>, a fresh graduate of the <span style="font-weight: bold;">Bachelor of Statistics</span> Study Program at Airlangga University. Have a great interest in data analyst, data scientist, business analyst, programming, and administrative. Have relevant skills and experience in research and projects related to <span style="font-weight: bold;">data analysis, data visualization, and statistical modeling</span>. I am detail-oriented, fast learning, capable of multitasking, and skilled in handling administrative tasks efficiently. I am looking for opportunities to apply my skills and knowledge, where I can <span style="font-weight: bold;">collaborate professionally</span> with other professionals and <span style="font-weight: bold;">contribute to achieving company goals</span>.</p> 
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+    
+    <section id="projects" class="projects">
+        <h2>Skills</h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <h3>Projects</h3>
+                <p>Overview of Projects</p>
+                <a href="projects.html" class="btn">Learn More</a>
+            </div>
+            <div class="project-item">
+                <h3>Infographics</h3>
+                <p>Collection of Infographics</p>
+                <a href="infografis.html" class="btn">Learn More</a>
+            </div>
+            <div class="project-item">
+                <h3>Certificates</h3>
+                <p>Collection of Certificates</p>
+                <a href="sertifikat.html" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Interested in working together or just want to say hello? You can reach me through the following platforms:</p>
+        <div class="contact-options">
+            <a href="https://www.linkedin.com/in/oktaviani-esty-susanti-721b1731a/" target="_blank" class="contact-link linkedin">
+                <i class="fab fa-linkedin"></i> Connect to LinkedIn
+            </a>
+            <a href="https://wa.me/+6281238084622" target="_blank" class="contact-link whatsapp">
+                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+            <a href="mailto:oktassnt17@gmail.com" class="contact-link email">
+                <i class="fas fa-envelope"></i> Send an Email
+            </a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Oktaviani Esty Susanti. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/oktaviani-esty-susanti-721b1731a/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://wa.me/+6281238084622" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:oktassnt17@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Include Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 3000, // Gambar akan bergeser setiap 2 detik
+                disableOnInteraction: false, // Autoplay tidak berhenti ketika pengguna berinteraksi
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            effect: 'slide', // Efek slide
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Projects | Fernanda Sugiwa Darmawan</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2980b9;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .project {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .project img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .gallery {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 10px 0;
+            white-space: nowrap;
+        }
+        .gallery img {
+            max-width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .project-details h2 {
+            margin-top: 0;
+            color: #2980b9;
+        }
+        .project-details p {
+            margin: 10px 0;
+        }
+        .project-details ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .back-to-home {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .back-to-home:hover {
+            background-color: #1c6ea4;
+        }
+        footer {
+            background-color: #2980b9;
+            text-align: center;
+            color: white;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+            .gallery img {
+                width: 80%;
+            }
+            .back-to-home {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Web Projects</h1>
+    </header>
+
+    <div class="content">
+        <div class="project">
+            <img src="skillkita.png" alt="IoT Project 1 Image">
+            <div class="project-details">
+                <h2>Project Web: SKILLKITA</h2>
+                <p>
+                    A website that contains training and job search in the 4.0 era, the training is also adapted to the times so that job seekers can have the skills needed in era 4.0.
+                </p>
+                <p><strong>Main Features:</strong></p>
+                <ul>
+                    <li>Job Training.</li>
+                    <li>Job Vacancies.</li>
+                    <li>Certification.</li>
+                </ul>
+                <p>
+                    The technologies used in this project include HTML, CSS, and JavaScript for the frontend, along with a responsive design to ensure accessibility across devices. The backend is powered by the Laravel framework, providing robust support for user authentication, job postings, and training management. Additionally, MySQL is used as the database to store user data, training courses, and job listings, ensuring efficient data retrieval and management. The site is hosted on a cloud platform to ensure scalability and high availability.
+                </p>
+            </div>
+        </div>
+        <div class="gallery">
+            <img src="kursus.png" alt="IoT Project 1 Image">
+                <img src="harga.png" alt="IoT Project 2 Image">
+                <img src="promo.png" alt="IoT Project 3 Image">
+                <img src="events.png" alt="IoT Project 3 Image">
+                <img src="tentang.png" alt="IoT Project 4 Image">
+                <img src="loker.png" alt="IoT Project 5 Image">
+                <img src="profil.png" alt="IoT Project 6 Image">
+                <img src="regis.png" alt="IoT Project 7 Image"> 
+                <img src="infoloker.png" alt="IoT Project 8 Image">
+        </div>
+    </div>
+    <a href="web-developer.html" class="back-to-home">Back</a>
+
+    <footer>
+        <p>&copy; 2024 Fernanda Sugiwa Darmawan. All rights reserved.</p>
+    </footer>
+</body>
+</html>

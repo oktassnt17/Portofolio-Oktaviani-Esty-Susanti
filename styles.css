@@ -1,0 +1,726 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    height: 100vh;
+    background: url('your-image.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background: #ff6f61;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about, .projects, .contact {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.project-item {
+    padding: 1rem;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+    color: #fff;
+}
+
+.social-icons i {
+    font-size: 1.2rem;
+}
+
+.contact-options {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.contact-link {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.contact-link i {
+    margin-right: 10px;
+}
+
+.contact-link:hover {
+    background-color: #ff6f61;
+    transition: background-color 0.3s ease;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slide 9s infinite;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+.hero-content h2 {
+    color: #ff6f61; /* Ganti dengan warna yang kamu inginkan */
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 2rem;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10; /* Make sure content is on top of the carousel */
+}
+
+/* Resetting some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    height: 500px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center; /* Center align slides vertically */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100%; /* Ensure the image does not exceed the container height */
+    object-fit: contain; /* Contain the image within the container */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #e55e50;
+}
+
+.about, .projects, .contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-item {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px; /* Adjust width as needed */
+}
+
+.contact-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Specific colors for each button */
+.linkedin {
+    background-color: #0077b5; /* LinkedIn color */
+}
+
+.whatsapp {
+    background-color: #25d366; /* WhatsApp color */
+}
+
+.email {
+    background-color: #ea4335; /* Gmail color */
+}
+
+.contact-link i {
+    margin-right: 10px;
+    font-size: 1.4rem;
+}
+
+/* Hover effects */
+.contact-link:hover {
+    opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between buttons */
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-link i {
+    margin-right: 10px;
+    font-size: 1.4rem;
+}
+
+/* Specific colors for each button */
+.linkedin {
+    background-color: #0077b5; /* LinkedIn color */
+}
+
+.whatsapp {
+    background-color: #25d366; /* WhatsApp color */
+}
+
+.email {
+    background-color: #ea4335; /* Gmail color */
+}
+
+/* Hover effects */
+.contact-link:hover {
+    opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.hero {
+    position: relative;
+    height: 500px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center; /* Center align slides vertically */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the entire container */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 10; /* Ensure content is above images */
+    background: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #e55e50;
+}
+.swiper-container {
+    width: 100%;
+    height: 100vh; /* Set the height to full viewport height */
+    position: relative;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.swiper-container {
+    width: 1004px; /* Lebar yang sesuai */
+    height: 591px; /* Tinggi yang sesuai */
+    margin: 0 auto; /* Pusatkan jika perlu */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden; /* Menghindari overflow gambar */
+}
+
+.swiper-slide {
+    width: 1004px; /* Lebar yang sesuai */
+    height: 591px; /* Tinggi yang sesuai */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box; /* Menyesuaikan ukuran slide dengan padding */
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mengatur gambar agar sesuai dengan area slide */
+    border-radius: 8px;
+}
+.photo-gallery h1 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+    transform: scale(1.05);
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav .logo h1 {
+    font-size: 1.8rem;
+}
+
+nav ul.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul.nav-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    nav ul.nav-links li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    nav .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .swiper-container {
+        padding: 10px;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-grid {
+        display: block;
+    }
+
+    .project-item {
+        margin-bottom: 20px;
+    }
+
+    .image-gallery {
+        display: block;
+    }
+
+    .image-gallery img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .swiper-container {
+        max-width: 100%;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+/* More specific queries for smaller devices */
+@media (max-width: 480px) {
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-item p {
+        font-size: 1rem;
+    }
+
+    .project-item .btn {
+        font-size: 1rem;
+    }
+}
+
+/* Dropdown Menu */
+.nav-links {
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-links li:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #34495e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.dropdown-menu li a {
+    color: #ecf0f1;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #2980b9;
+}
