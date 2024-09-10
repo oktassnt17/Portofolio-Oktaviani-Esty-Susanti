@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects 4 | Oktaviani Esty Susanti</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2980b9;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            text-align: center;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .project {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .project .image-container {
+            flex: 1; /* Ensures each image container takes up equal space */
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .project .image-container h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #2980b9; /* Title color */
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .project-details {
+            margin-top: 40px;
+        }
+        .gallery {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 10px 0;
+            white-space: nowrap;
+        }
+        .gallery img {
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-title {
+            text-align: center; /* Menengahkan teks */
+            color: #333; /* Warna judul */
+            margin-bottom: 0px; /* Spasi bawah untuk pemisahan */
+            font-size: 24px; /* Ukuran font untuk judul */
+            font-weight: bold; /* Tebal font */
+        }
+        .project-details h2 {
+            margin-top: 0;
+            color: #2980b9;
+        }
+        .project-details p {
+            margin-top: 15px;
+            margin-bottom: 0px;
+        }
+        .project-details ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .back-to-home {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .back-to-home:hover {
+            background-color: #1c6ea4;
+        }
+        footer {
+            background-color: #2980b9;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #2980b9;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .project {
+                flex-direction: column;
+            }
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+            .gallery img {
+                width: 80%;
+            }
+            .back-to-home {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Analysis of Housing Prices Using Machine Learning</h1>
+    </header>
+
+    <div class="content">
+        <div class="project">
+            <div class="image-container">
+                <img src="Housing Prices.jpg" alt="Dashboard 1 Image">
+            </div>
+        </div>
+        <div class="project-details">
+            <p><strong>Business understanding</strong></p>
+                The property market is one of the dynamic and complex sectors of the economy, where the selling price of a house is influenced by various factors such as square footage, quality, age, location, and other additional features. For property developers, real estate agents, and investors, determining an accurate selling price is challenging due to the many variables to consider. Understanding the key factors that influence house prices is essential to optimize pricing strategies and business decision-making. Without a proper understanding of the price-determining elements, businesses may end up setting prices that are less competitive, risking losing market opportunities or incurring losses.
+            </p>
+            <p><strong>Project Goal</strong></p>
+                This project aims to analyze the key factors that influence the selling price of houses and develop an accurate prediction model using machine learning techniques. By understanding the relationship between various property features, such as building area, quality, and additional features, this project helps developers, real estate agents, and investors set more competitive and targeted prices. The results of this analysis are expected to improve data-driven decision-making, minimize the risk of incorrect pricing, and optimize profits in the property market.
+            <h3 class="gallery-title">Project Results</h3>
+            <div class="gallery">
+                <img src="Housing Prices 1.jpg" alt="Regresi Birespon Project 1 Image">
+                <img src="Housing Prices 2.jpg" alt="Regresi Birespon Project 2 Image">
+                <img src="Housing Prices 3.jpg" alt="Regresi Birespon Project 3 Image">
+                <img src="Housing Prices 4.jpg" alt="Regresi Birespon Project 4 Image">
+                <img src="Housing Prices 5.jpg" alt="Regresi Birespon Project 5 Image">
+                <img src="Housing Prices 6.jpg" alt="Regresi Birespon Project 6 Image">
+                <img src="Housing Prices 7.jpg" alt="Regresi Birespon Project 7 Image">
+                <img src="Housing Prices 8.jpg" alt="Regresi Birespon Project 7 Image">
+                <img src="Housing Prices 9.jpg" alt="Regresi Birespon Project 7 Image">
+                <img src="Housing Prices 10.jpg" alt="Regresi Birespon Project 7 Image">
+                <img src="Housing Prices 11.jpg" alt="Regresi Birespon Project 7 Image">
+                <img src="Housing Prices 12.jpg" alt="Regresi Birespon Project 7 Image">
+                <img src="Housing Prices 13.jpg" alt="Regresi Birespon Project 7 Image">
+                <img src="Housing Prices 14.jpg" alt="Regresi Birespon Project 7 Image">
+                <img src="Housing Prices 15.jpg" alt="Regresi Birespon Project 7 Image">
+                <img src="Housing Prices 16.jpg" alt="Regresi Birespon Project 7 Image">
+                <img src="Housing Prices 17.jpg" alt="Regresi Birespon Project 7 Image">
+                <img src="Housing Prices 18.jpg" alt="Regresi Birespon Project 7 Image">
+            </div>
+
+            <p><strong>Conclusion</strong></p>
+            <ul>
+                <li>The analysis shows that the “Area_Quality_Indicator,” which combines the usable area and overall quality of the property, is the most influential factor in determining the selling price. The larger and higher quality the usable area, the higher the selling price of the property</li>
+                <li>“Total_Close_Live_Area,” which includes both above-ground and basement living areas, also has a strong correlation with sales price. Larger living areas tend to result in higher property values</li>
+                <li>The Ridge Regression model gave the best results with the smallest RMSE value, indicating that it is more accurate in predicting sale prices than the other models tested</li>
+                <li>In addition to quality and area indicators, other features such as the presence of a garage, the age of the house, the number of bathrooms, and other features also affect the price, although not as strongly as the two main features mentioned</li>
+            </ul>
+
+            <p><strong>Recommendations</strong></p>
+            <ul>
+                <li>Use Data for More Accurate Pricing: Real estate agents can use the results of this prediction model to determine a more accurate and competitive selling price. Utilizing key indicators such as “Area_Quality_Indicator” and “Total_Close_Live_Area” can help in setting realistic prices, thus attracting buyers and accelerating sales</li>
+                <li>In marketing, agents should emphasize features that are proven to have a major influence on the price, such as livable area, building quality, presence of a garage, and number of bathrooms. Highlighting these aspects in advertisements or presentations can increase the appeal of the property in the eyes of potential buyers</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+    <a href="projects.html" class="back-to-home">Back</a>
+
+    <footer>
+        <p>&copy; 2024 Oktaviani Esty Susanti. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/oktaviani-esty-susanti-721b1731a/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://wa.me/+6281238084622" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:oktassnt17@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
