@@ -48,7 +48,8 @@
         }
         .hero {
             position: relative;
-            width: 1004px; /* Sesuaikan dengan lebar gambar */
+            width: 100%;
+            max-width: 1004px; /* Sesuaikan dengan lebar gambar */
             height: 591px; /* Sesuaikan dengan tinggi gambar */
             margin: 0 auto; /* Memusatkan container di tengah */
             overflow: hidden;
@@ -165,13 +166,23 @@
         }
 
         /* Responsiveness */
+        @media (max-width: 1200px) {
+            .hero {
+                width: 100%;
+                height: auto;
+            }
+            .hero-content {
+                width: 90%;
+            }
+        }
         @media (max-width: 768px) {
             .nav-links {
                 flex-direction: column;
                 gap: 10px;
+                align-items: center;
             }
             .hero-content h2 {
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
             .hero-content p {
                 font-size: 1rem;
@@ -181,6 +192,21 @@
             }
             .btn {
                 font-size: 0.9rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero-content h2 {
+                font-size: 1.2rem;
+            }
+            .hero-content p {
+                font-size: 0.9rem;
+            }
+            .btn {
+                padding: 8px 16px;
+                font-size: 0.8rem;
+            }
+            .contact-link {
+                font-size: 1rem;
             }
         }
     </style>
