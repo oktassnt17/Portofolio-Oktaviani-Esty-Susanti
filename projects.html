@@ -101,7 +101,7 @@
     .project-image {
       width: 100%;
       height: 150px;
-      object-fit8: cover;
+      object-fit: cover;
       border-radius: 8px;
       margin-bottom: 15px;
     }
@@ -147,6 +147,16 @@
         .social-icons a:hover {
             color: #1a5d80;
         }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+      }
+      .search-box input[type="text"] {
+        width: 90%;
+      }
+    }
   </style>
 </head>
 <body>
