@@ -1,3 +1,8 @@
+/* =========================================================
+   Oktaviani Esty Susanti — Portfolio
+   Corporate design system
+   ========================================================= */
+
 :root {
   /* Palette */
   --navy-950: #0A1524;
@@ -215,22 +220,36 @@ h1, h2, h3, h4 {
   color: var(--white);
   position: relative;
   overflow: hidden;
+  border-bottom: 1px solid var(--line-dark);
 }
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  align-items: center;
-  gap: 56px;
-  padding: 88px 0 76px;
+/* faint corner rule motif — restrained, no imagery needed */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 46%;
+  height: 100%;
+  background:
+    repeating-linear-gradient(90deg, rgba(176, 141, 79, 0.06) 0px, rgba(176, 141, 79, 0.06) 1px, transparent 1px, transparent 64px);
+  pointer-events: none;
+}
+
+.hero-inner {
   position: relative;
   z-index: 2;
+  padding: 104px 0 96px;
+}
+
+.hero-copy {
+  max-width: 780px;
 }
 
 .hero-copy h1 {
   color: var(--white);
-  font-size: clamp(2.1rem, 4vw, 3.1rem);
-  margin-bottom: 20px;
+  font-size: clamp(2.2rem, 4.6vw, 3.6rem);
+  margin-bottom: 22px;
 }
 
 .hero-copy h1 span {
@@ -239,47 +258,15 @@ h1, h2, h3, h4 {
 
 .hero-copy p {
   color: rgba(255, 255, 255, 0.78);
-  font-size: 1.05rem;
-  max-width: 46ch;
-  margin-bottom: 32px;
+  font-size: 1.08rem;
+  max-width: 56ch;
+  margin-bottom: 36px;
 }
 
 .hero-actions {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
-}
-
-.hero-visual {
-  position: relative;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.swiper-container {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.swiper-pagination-bullet {
-  background: var(--white) !important;
-  opacity: 0.5 !important;
-}
-.swiper-pagination-bullet-active {
-  background: var(--gold-500) !important;
-  opacity: 1 !important;
-}
-.swiper-button-next, .swiper-button-prev {
-  color: var(--gold-500) !important;
-  transform: scale(0.7);
 }
 
 /* ---------- Sections (generic) ---------- */
@@ -382,6 +369,111 @@ section {
   color: var(--ink-500);
   font-size: 0.94rem;
   margin-bottom: 22px;
+}
+
+/* Work experience timeline */
+.timeline {
+  position: relative;
+  max-width: 860px;
+  margin: 0 auto;
+  padding-left: 8px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 23px;
+  top: 10px;
+  bottom: 10px;
+  width: 1px;
+  background: var(--line);
+}
+
+.timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  column-gap: 24px;
+  margin-bottom: 34px;
+}
+
+.timeline-item:last-child { margin-bottom: 0; }
+
+.timeline-marker {
+  display: flex;
+  justify-content: center;
+  padding-top: 28px;
+}
+
+.timeline-dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--gold-500);
+  border: 3px solid var(--paper-alt);
+  box-shadow: 0 0 0 1px var(--gold-500);
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-item.current .timeline-dot {
+  background: var(--navy-900);
+  box-shadow: 0 0 0 1px var(--gold-500), 0 0 0 4px rgba(176, 141, 79, 0.22);
+}
+
+.timeline-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 26px 30px;
+  box-shadow: var(--shadow-card);
+}
+
+.timeline-date {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold-600);
+  background: var(--gold-100);
+  padding: 4px 10px;
+  border-radius: 3px;
+  margin-bottom: 12px;
+}
+
+.timeline-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.timeline-org {
+  font-size: 0.9rem;
+  color: var(--ink-500);
+  font-style: italic;
+  margin-bottom: 14px;
+}
+
+.timeline-card ul { margin-top: 4px; }
+
+.timeline-card ul li {
+  position: relative;
+  padding-left: 20px;
+  color: var(--ink-700);
+  font-size: 0.95rem;
+  margin-bottom: 9px;
+}
+
+.timeline-card ul li:last-child { margin-bottom: 0; }
+
+.timeline-card ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 7px;
+  height: 1px;
+  background: var(--gold-500);
 }
 
 /* Contact */
@@ -785,8 +877,7 @@ section {
 
 /* ---------- Responsive ---------- */
 @media (max-width: 960px) {
-  .hero-grid { grid-template-columns: 1fr; padding: 56px 0; }
-  .hero-visual { order: -1; max-width: 420px; margin: 0 auto; }
+  .hero-inner { padding: 72px 0 64px; }
   .capability-grid { grid-template-columns: 1fr 1fr; }
   .projects-grid { grid-template-columns: 1fr 1fr; }
   .certificate-grid { grid-template-columns: 1fr 1fr; }
@@ -800,9 +891,13 @@ section {
   .brand { align-items: center; }
   .nav-links { flex-wrap: wrap; justify-content: center; gap: 4px; }
   .about-panel { padding: 28px; }
+  .timeline::before { left: 17px; }
+  .timeline-item { grid-template-columns: 34px 1fr; column-gap: 14px; }
+  .timeline-card { padding: 20px; }
   .capability-grid { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
   .certificate-grid { grid-template-columns: 1fr; }
   .excel-gallery { grid-template-columns: repeat(2, 1fr); }
   section { padding: 60px 0; }
 }
+
