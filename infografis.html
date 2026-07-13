@@ -3,179 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Infographics | Oktaviani Esty Susanti</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        header {
-            background-color: #2980b9;
-            color: #fff;
-            width: 100%;
-            padding: 20px;
-            text-align: center;
-            box-sizing: border-box;
-        }
-
-        .logo h1 {
-            margin: 0;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            width: 100%;
-        }
-
-        .nav-links {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            gap: 20px;
-        }
-
-        .nav-links a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1rem;
-        }
-
-        .nav-links a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            background-color: #2980b9;
-            color: #fff;
-            width: 100%;
-            text-align: center;
-            padding: 20px;
-            box-sizing: border-box;
-            position: relative;
-            bottom: 0;
-        }
-        
-        .social-icons {
-            margin-top: 10px;
-        }
-
-        .social-icons a {
-            color: #fff;
-            font-size: 1.5rem;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-
-        .social-icons a:hover {
-            color: #2980b9;
-        }
-        
-        .container {
-            width: 90%;
-            max-width: 700px;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border-radius: 10px;
-            text-align: center;
-            margin-top: 80px; /* Adjust margin-top to prevent overlap with fixed header */
-            margin-bottom: 80px; /* Adjust margin-bottom to prevent overlap with fixed footer */
-        }
-
-        h2 {
-            color: #fff;
-            margin-top: 5px;
-            margin-bottom: 20px;
-            font-size: 20px;
-            background-color: #2980b9; /* Blue background color */
-            padding: 15px 20px; /* Space around the text */
-            border-radius: 10px; /* Oval effect */
-            display: inline-block; /* Ensure the background fits the text */
-        }
-
-        .infografis {
-            position: relative;
-            width: 100%;
-            max-width: 700px;
-        }
-
-        .infografis img {
-            width: 100%;
-            border-radius: 10px;
-            display: none; /* Hide all images initially */
-        }
-
-        .infografis img.active {
-            display: block; /* Show only the active image */
-        }
-
-        .controls {
-            margin-top: 10px;
-        }
-
-        .button {
-            cursor: pointer;
-            padding: 10px 20px;
-            background-color: #2980b9;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            margin: 5px;
-            font-size: 16px;
-        }
-        /* Responsive styles */
-        @media (max-width: 768px) {
-          .nav-links {
-            flex-direction: column;
-          }
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <nav>
-            <div class="logo">
-                <h1>Oktaviani Esty Susanti</h1>
-            </div>
+            <a href="index.html" class="brand">
+                <span class="brand-name">Oktaviani Esty Susanti</span>
+                <span class="brand-role">Statistician &amp; Data Analyst</span>
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
+                <li><a href="infografis.html" class="active">Infographics</a></li>
                 <li><a href="sertifikat.html">Certificates</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="container">
-        <h2>Infographic</h2>
-        <div class="infografis">
-            <img src="Infografis SIC.png" alt="infografis Page 1" class="active">
-            <img src="Infografis Prostok.jpg" alt="infografis Page 2">
-            <img src="Infografis ARW.jpg" alt="infografis Page 3">
-            <img src="Infografis KCDA.png" alt="infografis Page 4">
-            <img src="Infografis SKD.png" alt="infografis Page 5">
+    <section class="page-banner">
+        <div class="wrap">
+            <span class="eyebrow">Visual Reporting</span>
+            <h1>Infographics</h1>
+            <p>A collection of data-driven infographics designed to communicate findings clearly to a general audience.</p>
         </div>
-        <div class="controls">
-            <button class="button" onclick="changeSlide(-1)">Previous</button>
-            <button class="button" onclick="changeSlide(1)">Next</button>
-        </div>
-    </div>
+    </section>
 
-    <footer>
+    <section>
+        <div class="wrap">
+            <div class="infographic-panel">
+                <div class="infografis">
+                    <img src="Infografis SIC.png" alt="Infografis Page 1" class="active">
+                    <img src="Infografis Prostok.jpg" alt="Infografis Page 2">
+                    <img src="Infografis ARW.jpg" alt="Infografis Page 3">
+                    <img src="Infografis KCDA.png" alt="Infografis Page 4">
+                    <img src="Infografis SKD.png" alt="Infografis Page 5">
+                </div>
+                <div class="controls">
+                    <button class="btn btn-outline btn-small" onclick="changeSlide(-1)"><i class="fas fa-arrow-left"></i> Previous</button>
+                    <button class="btn btn-primary btn-small" onclick="changeSlide(1)">Next <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
         <p>&copy; 2024 Oktaviani Esty Susanti. All Rights Reserved.</p>
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/oktaviani-esty-susanti-721b1731a/" target="_blank" aria-label="LinkedIn">
@@ -206,14 +85,13 @@
         function changeSlide(direction) {
             currentSlide += direction;
             if (currentSlide < 0) {
-                currentSlide = slides.length - 1; // Wrap around to the last slide
+                currentSlide = slides.length - 1;
             } else if (currentSlide >= slides.length) {
-                currentSlide = 0; // Wrap around to the first slide
+                currentSlide = 0;
             }
             showSlide(currentSlide);
         }
 
-        // Initial display
         showSlide(currentSlide);
     </script>
 </body>
