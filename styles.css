@@ -1,3 +1,8 @@
+/* =========================================================
+   Oktaviani Esty Susanti — Portfolio
+   Corporate design system
+   ========================================================= */
+
 :root {
   /* Palette */
   --navy-950: #0A1524;
@@ -895,4 +900,3 @@ section {
   .excel-gallery { grid-template-columns: repeat(2, 1fr); }
   section { padding: 60px 0; }
 }
-
