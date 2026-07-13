@@ -234,7 +234,7 @@ h1, h2, h3, h4 {
 .hero-inner {
   position: relative;
   z-index: 2;
-  padding: 56px 0 88px;
+  padding: 40px 0 72px;
 }
 
 .hero-copy {
@@ -545,7 +545,7 @@ section {
 .page-banner {
   background: var(--navy-900);
   color: var(--white);
-  padding: 64px 0 48px;
+  padding: 40px 0 36px;
   text-align: center;
 }
 .page-banner .eyebrow { justify-content: center; }
@@ -661,7 +661,7 @@ section {
 .project-detail-header {
   background: var(--navy-900);
   color: var(--white);
-  padding: 56px 0 44px;
+  padding: 40px 0 36px;
 }
 .project-detail-header .eyebrow { justify-content: flex-start; }
 .project-detail-header h1 { color: var(--white); font-size: clamp(1.5rem, 3vw, 2.2rem); max-width: 46ch; }
