@@ -216,6 +216,7 @@ h1, h2, h3, h4 {
   position: relative;
   overflow: hidden;
   border-bottom: 1px solid var(--line-dark);
+  padding: 0;
 }
 
 /* faint corner rule motif — restrained, no imagery needed */
