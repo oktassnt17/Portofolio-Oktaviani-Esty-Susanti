@@ -3,172 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects 3 | Oktaviani Esty Susanti</title>
+    <title>Analisis Jumlah Penduduk dan Angkatan Kerja | Oktaviani Esty Susanti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #2980b9;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 28px;
-            text-align: center;
-        }
-        .content {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .project {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-        .project .image-container {
-            flex: 1; /* Ensures each image container takes up equal space */
-            background-color: #f4f4f4;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .project .image-container h2 {
-            text-align: center;
-            margin-bottom: 10px;
-            color: #2980b9; /* Title color */
-        }
-        .project img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .project-details {
-            margin-top: 40px;
-        }
-        .gallery {
-            display: flex;
-            overflow-x: auto;
-            gap: 20px;
-            padding: 10px 0;
-            white-space: nowrap;
-        }
-        .gallery img {
-            max-width: 600px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .gallery-title {
-            text-align: center; /* Menengahkan teks */
-            color: #333; /* Warna judul */
-            margin-bottom: 0px; /* Spasi bawah untuk pemisahan */
-            font-size: 24px; /* Ukuran font untuk judul */
-            font-weight: bold; /* Tebal font */
-        }
-        .project-details h2 {
-            margin-top: 0;
-            color: #2980b9;
-        }
-        .project-details p {
-            margin-top: 15px;
-            margin-bottom: 0px;
-        }
-        .project-details ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-        .back-to-home {
-            display: block;
-            width: fit-content;
-            margin: 20px auto;
-            padding: 10px 20px;
-            background-color: #2980b9;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-        .back-to-home:hover {
-            background-color: #1c6ea4;
-        }
-        footer {
-            background-color: #2980b9;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-        .social-icons {
-            margin-top: 10px;
-        }
-        .social-icons a {
-            color: #fff;
-            font-size: 1.5rem;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        .social-icons a:hover {
-            color: #2980b9;
-        }
-
-        /* Responsiveness */
-        @media (max-width: 768px) {
-            .project {
-                flex-direction: column;
-            }
-            .gallery {
-                flex-direction: column;
-                align-items: center;
-            }
-            .gallery img {
-                width: 80%;
-            }
-            .back-to-home {
-                padding: 10px 15px;
-                font-size: 0.9rem;
-            }
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <h1>Analisis Pengaruh Jumlah Penduduk Terhadap Jumlah Angkatan Kerja di Kabupaten Jombang</h1>
+    <header class="site-header">
+        <nav>
+            <a href="index.html" class="brand">
+                <span class="brand-name">Oktaviani Esty Susanti</span>
+                <span class="brand-role">Statistician &amp; Data Analyst</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="infografis.html">Infographics</a></li>
+                <li><a href="sertifikat.html">Certificates</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="content">
-        <div class="project">
-            <div class="image-container">
-                <img src="Cover Angkatan Kerja.jpg" alt="Dashboard 1 Image">
-            </div>
+    <header class="project-detail-header">
+        <div class="wrap">
+            <span class="eyebrow">Case 03 &middot; Regression Analysis</span>
+            <h1>Analisis Pengaruh Jumlah Penduduk Terhadap Jumlah Angkatan Kerja di Kabupaten Jombang</h1>
         </div>
-        <div class="project-details">
-            <p><strong>Latar Belakang</strong></p>
-                Pertumbuhan penduduk di Kabupaten Jombang berpotensi mempengaruhi jumlah angkatan kerja yang merupakan salah satu indikator penting dalam mendukung kegiatan ekonomi dan pembangunan daerah. Seiring bertambahnya jumlah penduduk, diharapkan jumlah angkatan kerja juga akan meningkat, namun hubungan keduanya dapat dipengaruhi oleh berbagai faktor seperti tingkat pendidikan dan kebijakan ketenagakerjaan. Oleh karena itu, penting untuk menganalisis pengaruh jumlah penduduk terhadap jumlah angkatan kerja agar dapat memberikan dasar yang kuat dalam perencanaan kebijakan ketenagakerjaan dan pembangunan ekonomi yang efektif di Kabupaten Jombang.
-            </p>
-            <p><strong>Tujuan Penelitian</strong></p>
-                Penelitian ini bertujuan untuk mengetahui pengaruh jumlah penduduk terhadap jumlah angkatan kerja di Kabupaten Jombang pada tahun 2021.
-            <p><strong>Benefits of the Research</strong></p>
-            <ul>
-                <li><span style="font-weight: bold;">Bagi Pemerintah Daerah :</span> Menyediakan informasi yang diperlukan untuk merancang kebijakan ketenagakerjaan dan program pembangunan ekonomi yang efektif, serta mengelola pertumbuhan penduduk dengan strategi yang tepat untuk meningkatkan kesejahteraan masyarakat</li>
-                <li><span style="font-weight: bold;">Bagi Peneliti Lain :</span> Menjadi referensi untuk penelitian lebih lanjut mengenai hubungan antara demografi dan angkatan kerja, serta menyediakan data dan temuan yang dapat digunakan untuk penelitian serupa di wilayah lain atau dalam konteks yang berbeda</li>
-                <li><span style="font-weight: bold;">Bagi Masyarakat Umum :</span> Membantu masyarakat memahami bagaimana pertumbuhan penduduk mempengaruhi kesempatan kerja, sehingga masyarakat dapat merencanakan karier dan pendidikan dengan lebih baik, dan memanfaatkan peluang yang ada</li>
-            </ul>
-            
+    </header>
+
+    <div class="detail-content">
+        <div class="wrap">
+            <div class="detail-media single">
+                <div class="media-frame">
+                    <img src="Cover Angkatan Kerja.jpg" alt="Labor force analysis cover image">
+                </div>
+            </div>
+
+            <div class="detail-body">
+                <div class="detail-block">
+                    <h2>Latar Belakang</h2>
+                    <p>Pertumbuhan penduduk di Kabupaten Jombang berpotensi mempengaruhi jumlah angkatan kerja yang merupakan salah satu indikator penting dalam mendukung kegiatan ekonomi dan pembangunan daerah. Seiring bertambahnya jumlah penduduk, diharapkan jumlah angkatan kerja juga akan meningkat, namun hubungan keduanya dapat dipengaruhi oleh berbagai faktor seperti tingkat pendidikan dan kebijakan ketenagakerjaan. Oleh karena itu, penting untuk menganalisis pengaruh jumlah penduduk terhadap jumlah angkatan kerja agar dapat memberikan dasar yang kuat dalam perencanaan kebijakan ketenagakerjaan dan pembangunan ekonomi yang efektif di Kabupaten Jombang.</p>
+                </div>
+
+                <div class="detail-block">
+                    <h2>Tujuan Penelitian</h2>
+                    <p>Penelitian ini bertujuan untuk mengetahui pengaruh jumlah penduduk terhadap jumlah angkatan kerja di Kabupaten Jombang pada tahun 2021.</p>
+                </div>
+
+                <div class="detail-block">
+                    <h2>Benefits of the Research</h2>
+                    <ul>
+                        <li><strong>Bagi Pemerintah Daerah:</strong> Menyediakan informasi yang diperlukan untuk merancang kebijakan ketenagakerjaan dan program pembangunan ekonomi yang efektif, serta mengelola pertumbuhan penduduk dengan strategi yang tepat untuk meningkatkan kesejahteraan masyarakat</li>
+                        <li><strong>Bagi Peneliti Lain:</strong> Menjadi referensi untuk penelitian lebih lanjut mengenai hubungan antara demografi dan angkatan kerja, serta menyediakan data dan temuan yang dapat digunakan untuk penelitian serupa di wilayah lain atau dalam konteks yang berbeda</li>
+                        <li><strong>Bagi Masyarakat Umum:</strong> Membantu masyarakat memahami bagaimana pertumbuhan penduduk mempengaruhi kesempatan kerja, sehingga masyarakat dapat merencanakan karier dan pendidikan dengan lebih baik, dan memanfaatkan peluang yang ada</li>
+                    </ul>
+                </div>
+            </div>
+
             <h3 class="gallery-title">Project Results</h3>
             <div class="gallery">
                 <img src="Angkatan Kerja 1.jpg" alt="Angkatan Kerja Project 1 Image">
@@ -180,21 +75,29 @@
                 <img src="Angkatan Kerja 7.jpg" alt="Angkatan Kerja Project 7 Image">
             </div>
 
-            <p><strong>Kesimpulan</strong></p>
-                Berdasarkan analisis yang dilakukan, ditemukan bahwa jumlah penduduk di Kabupaten Jombang memiliki pengaruh signifikan yang positif terhadap jumlah angkatan kerja. Persamaan model regresi menunjukkan bahwa setiap kenaikan satu satuan jumlah penduduk akan meningkatkan jumlah angkatan kerja sebesar 0,3860. Dengan nilai R squared sebesar 97,65%, model regresi ini menjelaskan sebagian besar variasi jumlah angkatan kerja, hal ini mengindikasikan bahwa model ini sangat baik dalam memprediksi hubungan antara jumlah penduduk dan jumlah angkatan kerja. 
+            <div class="detail-body">
+                <div class="detail-block">
+                    <h2>Kesimpulan</h2>
+                    <p>Berdasarkan analisis yang dilakukan, ditemukan bahwa jumlah penduduk di Kabupaten Jombang memiliki pengaruh signifikan yang positif terhadap jumlah angkatan kerja. Persamaan model regresi menunjukkan bahwa setiap kenaikan satu satuan jumlah penduduk akan meningkatkan jumlah angkatan kerja sebesar 0,3860. Dengan nilai R squared sebesar 97,65%, model regresi ini menjelaskan sebagian besar variasi jumlah angkatan kerja, hal ini mengindikasikan bahwa model ini sangat baik dalam memprediksi hubungan antara jumlah penduduk dan jumlah angkatan kerja.</p>
+                </div>
 
-            <p><strong>Rekomendasi</strong></p>
-            <ul>
-                <li><span style="font-weight: bold;">Bagi Pemerintah Daerah :</span> Mengembangkan program pelatihan keterampilan untuk memanfaatkan potensi angkatan kerja yang meningkat. Selain itu, investasi pada infrastruktur ketenagakerjaan seperti pusat karir dan bursa kerja sangat penting untuk memfasilitasi penyerapan angkatan kerja baru ke dalam pasar kerja. Pemerintah juga perlu melakukan pemantauan dan evaluasi secara berkala terhadap dinamika populasi dan angkatan kerja untuk menyesuaikan kebijakan secara tepat dan responsif</li>
-                <li><span style="font-weight: bold;">Bagi Peneliti Lain :</span> Melakukan studi lanjutan yang mengeksplorasi faktor-faktor lain yang memengaruhi angkatan kerja, seperti tingkat pendidikan, pelatihan, dan kebijakan ketenagakerjaan.  Selain itu, membandingkan hasil studi ini dengan studi di wilayah lain dapat memberikan wawasan yang lebih dalam mengenai hubungan antara demografi dan angkatan kerja dan mengidentifikasi pola atau perbedaan yang relevan</li>
-                <li><span style="font-weight: bold;">Bagi Masyarakat Umum :</span> Manfaatkan program pelatihan dan pendidikan yang tersedia untuk meningkatkan keterampilan dan memaksimalkan peluang kerja. Selain itu, dengan memahami informasi tentang pertumbuhan populasi dan angkatan kerja, masyarakat dapat merencanakan karir dan memilih jalur pendidikan yang sesuai dengan kebutuhan dan peluang pasar tenaga kerja</li>
-            </ul>
-            </p>
+                <div class="detail-block">
+                    <h2>Rekomendasi</h2>
+                    <ul>
+                        <li><strong>Bagi Pemerintah Daerah:</strong> Mengembangkan program pelatihan keterampilan untuk memanfaatkan potensi angkatan kerja yang meningkat. Selain itu, investasi pada infrastruktur ketenagakerjaan seperti pusat karir dan bursa kerja sangat penting untuk memfasilitasi penyerapan angkatan kerja baru ke dalam pasar kerja. Pemerintah juga perlu melakukan pemantauan dan evaluasi secara berkala terhadap dinamika populasi dan angkatan kerja untuk menyesuaikan kebijakan secara tepat dan responsif</li>
+                        <li><strong>Bagi Peneliti Lain:</strong> Melakukan studi lanjutan yang mengeksplorasi faktor-faktor lain yang memengaruhi angkatan kerja, seperti tingkat pendidikan, pelatihan, dan kebijakan ketenagakerjaan. Selain itu, membandingkan hasil studi ini dengan studi di wilayah lain dapat memberikan wawasan yang lebih dalam mengenai hubungan antara demografi dan angkatan kerja dan mengidentifikasi pola atau perbedaan yang relevan</li>
+                        <li><strong>Bagi Masyarakat Umum:</strong> Manfaatkan program pelatihan dan pendidikan yang tersedia untuk meningkatkan keterampilan dan memaksimalkan peluang kerja. Selain itu, dengan memahami informasi tentang pertumbuhan populasi dan angkatan kerja, masyarakat dapat merencanakan karir dan memilih jalur pendidikan yang sesuai dengan kebutuhan dan peluang pasar tenaga kerja</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="back-row">
+                <a href="projects.html" class="btn btn-outline back-to-home"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+            </div>
         </div>
     </div>
-    <a href="projects.html" class="back-to-home">Back</a>
 
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2024 Oktaviani Esty Susanti. All Rights Reserved.</p>
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/oktaviani-esty-susanti-721b1731a/" target="_blank" aria-label="LinkedIn">
