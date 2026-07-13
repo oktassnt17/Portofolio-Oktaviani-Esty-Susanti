@@ -3,225 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Oktaviani Esty Susanti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <title>My Projects</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
-    header {
-      background-color: #2980b9;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    .logo h1 {
-      margin: 0;
-    }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .nav-links {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      gap: 20px;
-    }
-    .nav-links a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 1rem;
-    }
-    .nav-links a:hover {
-      text-decoration: underline;
-    }
-    .container {
-      width: 90%;
-      margin: 50px auto 0;
-      padding: 20px;
-    }
-
-    h1 {
-      text-align: center;
-      color: #fff;
-    }
-
-    h2 {
-      text-align: center;
-      color: #333;
-      margin-top: 0px; /* Tambahkan margin atas untuk menambah jarak di atas */
-      margin-bottom: 15px; /* Tambahkan margin bawah untuk menambah jarak di bawah */
-      font-size: 30px;
-    }
-
-    .search-box {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .search-box input[type="text"] {
-      width: 50%;
-      padding: 10px;
-      border: 2px solid #333;
-      border-radius: 5px;
-      font-size: 16px;
-    }
-
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .project-card {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      text-align: center; 
-    }
-
-    .project-card:hover {
-      transform: translateY(-10px);
-    }
-
-    .project-image {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 15px;
-    }
-
-    .project-title {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 10px;
-      color: #333;
-      text-align: center;
-      line-height: 1.3;
-    }
-
-    .explore-btn {
-      background-color: #007BFF;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .explore-btn:hover {
-      background-color: #0056b3;
-    }
-
-    footer {
-            background-color: #2980b9;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-        .social-icons {
-            margin-top: 10px;
-        }
-        .social-icons a {
-            color: #fff;
-            font-size: 1.5rem;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        .social-icons a:hover {
-            color: #1a5d80;
-        }
-
-    /* Responsive styles */
-    @media (max-width: 768px) {
-      .nav-links {
-        flex-direction: column;
-      }
-      .search-box input[type="text"] {
-        width: 80%;
-      }
-    }
-  </style>
 </head>
 <body>
-  <!-- Navbar -->
-  <header>
+  <header class="site-header">
     <nav>
-        <div class="logo">
-            <h1>Oktaviani Esty Susanti</h1>
-        </div>
+        <a href="index.html" class="brand">
+            <span class="brand-name">Oktaviani Esty Susanti</span>
+            <span class="brand-role">Statistician &amp; Data Analyst</span>
+        </a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
             <li><a href="infografis.html">Infographics</a></li>
             <li><a href="sertifikat.html">Certificates</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
         </ul>
     </nav>
-</header>
-  <div class="container">
-    <h2>My Projects</h2>
+  </header>
 
-    <div class="search-box">
-      <input type="text" id="searchInput" placeholder="Search Projects..." onkeyup="searchProjects()">
+  <section class="page-banner">
+    <div class="wrap">
+        <span class="eyebrow">Case Studies</span>
+        <h1>My Projects</h1>
+        <p>A selection of applied statistics, data analysis, and machine learning case studies.</p>
     </div>
+  </section>
 
-    <div class="projects-grid" id="projectsGrid">
-      <!-- Project -->
-      <div class="project-card">
-        <img src="Curn Customer.jpg" alt="Project 1 Cover" class="project-image">
-        <div class="project-title">Customer Analytics for Churn Prediction</div>
-        <a href="project 1.html" class="explore-btn">Explore More</a>
-      </div>
+  <section>
+    <div class="wrap">
+        <div class="projects-toolbar">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search projects..." onkeyup="searchProjects()">
+            </div>
+        </div>
 
-      <div class="project-card">
-        <img src="Cover Regresi Birespon.jpg" alt="Project 2 Cover" class="project-image">
-        <div class="project-title">Pemodelan Risiko Kejadian Hipertensi dan Stroke</div>
-        <a href="project 2.html" class="explore-btn">Explore More</a>
-      </div>
+        <div class="projects-grid" id="projectsGrid">
 
-      <div class="project-card">
-        <img src="Cover Angkatan Kerja.jpg" alt="Project 3 Cover" class="project-image">
-        <div class="project-title">Analisis Pengaruh Jumlah Penduduk terhadap Jumlah Angkatan Kerja</div>
-        <a href="project 3.html" class="explore-btn">Explore More</a>
-      </div>
+          <div class="project-card">
+            <div class="project-image-wrap">
+                <span class="case-code">CASE 01</span>
+                <img src="Curn Customer.jpg" alt="Customer Analytics for Churn Prediction cover">
+            </div>
+            <div class="project-card-body">
+                <div class="project-title">Customer Analytics for Churn Prediction</div>
+                <a href="project 1.html" class="btn btn-outline btn-small">Explore More</a>
+            </div>
+          </div>
 
-      <div class="project-card">
-        <img src="Cover Housing Price.jpg" alt="Project 4 Cover" class="project-image">
-        <div class="project-title">Analysis of Housing Prices Using Machine Learning</div>
-        <a href="project 4.html" class="explore-btn">Explore More</a>
-      </div>
+          <div class="project-card">
+            <div class="project-image-wrap">
+                <span class="case-code">CASE 02</span>
+                <img src="Cover Regresi Birespon.jpg" alt="Bivariate logistic regression project cover">
+            </div>
+            <div class="project-card-body">
+                <div class="project-title">Pemodelan Risiko Kejadian Hipertensi dan Stroke</div>
+                <a href="project 2.html" class="btn btn-outline btn-small">Explore More</a>
+            </div>
+          </div>
 
-      <div class="project-card">
-        <img src="Aplikasi Anova.jpg" alt="Project 5 Cover" class="project-image">
-        <div class="project-title">One-way ANOVA Test Application</div>
-        <a href="project 5.html" class="explore-btn">Explore More</a>
-      </div>
+          <div class="project-card">
+            <div class="project-image-wrap">
+                <span class="case-code">CASE 03</span>
+                <img src="Cover Angkatan Kerja.jpg" alt="Labor force analysis project cover">
+            </div>
+            <div class="project-card-body">
+                <div class="project-title">Analisis Pengaruh Jumlah Penduduk terhadap Jumlah Angkatan Kerja</div>
+                <a href="project 3.html" class="btn btn-outline btn-small">Explore More</a>
+            </div>
+          </div>
 
-      <div class="project-card">
-        <img src="Profil Excel.jpg" alt="Project 6 Cover" class="project-image">
-        <div class="project-title">Microsoft Excel</div>
-        <a href="project 6.html" class="explore-btn">Explore More</a>
-      </div>
-      
+          <div class="project-card">
+            <div class="project-image-wrap">
+                <span class="case-code">CASE 04</span>
+                <img src="Cover Housing Price.jpg" alt="Housing price analysis project cover">
+            </div>
+            <div class="project-card-body">
+                <div class="project-title">Analysis of Housing Prices Using Machine Learning</div>
+                <a href="project 4.html" class="btn btn-outline btn-small">Explore More</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image-wrap">
+                <span class="case-code">CASE 05</span>
+                <img src="Aplikasi Anova.jpg" alt="One-way ANOVA application cover">
+            </div>
+            <div class="project-card-body">
+                <div class="project-title">One-way ANOVA Test Application</div>
+                <a href="project 5.html" class="btn btn-outline btn-small">Explore More</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image-wrap">
+                <span class="case-code">CASE 06</span>
+                <img src="Profil Excel.jpg" alt="Microsoft Excel skills cover">
+            </div>
+            <div class="project-card-body">
+                <div class="project-title">Microsoft Excel</div>
+                <a href="project 6.html" class="btn btn-outline btn-small">Explore More</a>
+            </div>
+          </div>
+
+        </div>
     </div>
-  </div>
-  <footer>
+  </section>
+
+  <footer class="site-footer">
     <p>&copy; 2024 Oktaviani Esty Susanti. All Rights Reserved.</p>
     <div class="social-icons">
         <a href="https://www.linkedin.com/in/oktaviani-esty-susanti-721b1731a/" target="_blank" aria-label="LinkedIn">
@@ -234,7 +129,7 @@
             <i class="fas fa-envelope"></i>
         </a>
     </div>
-</footer>
+  </footer>
 
   <script>
     function searchProjects() {
@@ -244,7 +139,7 @@
       projects.forEach(function(project) {
         let title = project.querySelector('.project-title').textContent.toLowerCase();
         if (title.includes(input)) {
-          project.style.display = 'block';
+          project.style.display = 'flex';
         } else {
           project.style.display = 'none';
         }
