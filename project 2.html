@@ -3,172 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects 2 | Oktaviani Esty Susanti</title>
+    <title>Pemodelan Risiko Hipertensi dan Stroke | Oktaviani Esty Susanti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #2980b9;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 28px;
-            text-align: center;
-        }
-        .content {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .project {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-        .project .image-container {
-            flex: 1; /* Ensures each image container takes up equal space */
-            background-color: #f4f4f4;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .project .image-container h2 {
-            text-align: center;
-            margin-bottom: 10px;
-            color: #2980b9; /* Title color */
-        }
-        .project img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .project-details {
-            margin-top: 40px;
-        }
-        .gallery {
-            display: flex;
-            overflow-x: auto;
-            gap: 20px;
-            padding: 10px 0;
-            white-space: nowrap;
-        }
-        .gallery img {
-            max-width: 600px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .gallery-title {
-            text-align: center; /* Menengahkan teks */
-            color: #333; /* Warna judul */
-            margin-bottom: 0px; /* Spasi bawah untuk pemisahan */
-            font-size: 24px; /* Ukuran font untuk judul */
-            font-weight: bold; /* Tebal font */
-        }
-        .project-details h2 {
-            margin-top: 0;
-            color: #2980b9;
-        }
-        .project-details p {
-            margin-top: 15px;
-            margin-bottom: 0px;
-        }
-        .project-details ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-        .back-to-home {
-            display: block;
-            width: fit-content;
-            margin: 20px auto;
-            padding: 10px 20px;
-            background-color: #2980b9;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-        .back-to-home:hover {
-            background-color: #1c6ea4;
-        }
-        footer {
-            background-color: #2980b9;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-        .social-icons {
-            margin-top: 10px;
-        }
-        .social-icons a {
-            color: #fff;
-            font-size: 1.5rem;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        .social-icons a:hover {
-            color: #2980b9;
-        }
-
-        /* Responsiveness */
-        @media (max-width: 768px) {
-            .project {
-                flex-direction: column;
-            }
-            .gallery {
-                flex-direction: column;
-                align-items: center;
-            }
-            .gallery img {
-                width: 80%;
-            }
-            .back-to-home {
-                padding: 10px 15px;
-                font-size: 0.9rem;
-            }
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <h1>Pemodelan Risiko Kejadian Hipertensi dan Stroke dengan Pendekatan Regresi Logistik Birespon (Studi Kasus di Rumah Sakit Universitas Airlangga)</h1>
+    <header class="site-header">
+        <nav>
+            <a href="index.html" class="brand">
+                <span class="brand-name">Oktaviani Esty Susanti</span>
+                <span class="brand-role">Statistician &amp; Data Analyst</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="infografis.html">Infographics</a></li>
+                <li><a href="sertifikat.html">Certificates</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="content">
-        <div class="project">
-            <div class="image-container">
-                <img src="Regresi Birespon.jpg" alt="Dashboard 1 Image">
-            </div>
+    <header class="project-detail-header">
+        <div class="wrap">
+            <span class="eyebrow">Case 02 &middot; Biostatistics</span>
+            <h1>Pemodelan Risiko Kejadian Hipertensi dan Stroke dengan Pendekatan Regresi Logistik Birespon (Studi Kasus di Rumah Sakit Universitas Airlangga)</h1>
         </div>
-        <div class="project-details">
-            <p><strong>Latar Belakang</strong></p>
-                Berdasarkan data BPS yang dikumpulkan dari tahun 2017-2022, ditemukan bahwa jumlah kematian akibat PTM di Indonesia mencapai 7,04 juta kasus (BPS, 2023). Salah satu PTM yang paling banyak diderita oleh penduduk Indonesia adalah hipertensi dan stroke. Menurut data Riskesdas 2018, tercatat prevalensi hipertensi di Indonesia berdasarkan hasil pengukuran pada penduduk berusia >18 tahun mencapai 34,1%. Persentase ini meningkat dari prevalensi hipertensi sebelumnya pada tahun 2013 yang hanya mencapai 25,8%. Sementara itu, prevalensi stroke di Indonesia pada tahun 2013 mencapai 7%, dan meningkat menjadi 10,9% pada tahun 2018. Hipertensi dan stroke dianggap sebagai “komorbiditas” atau penyakit yang dapat terjadi secara bersamaan pada satu individu. Hipertensi merupakan faktor risiko utama yang dapat menyebabkan stroke. Tekanan darah sistolik dan diastolik yang tinggi diketahui dapat meningkatkan risiko stroke.
-            </p>
-            <p><strong>Tujuan Penelitian</strong></p>
-                Penelitian ini bertujuan untuk mendeskripsikan risiko hipertensi dan stroke pada pasien RSUA dan faktor-faktor yang diduga berpengaruh. Penelitian ini akan memodelkan risiko tersebut dengan menggunakan pendekatan regresi logistik birespon berdasarkan faktor-faktor yang diduga berpengaruh. Selain itu, penelitian ini juga akan menganalisis dan menginterpretasikan hasil pemodelan regresi logistik birespon terhadap kejadian hipertensi dan stroke.
-            <p><strong>Manfaat Penelitian</strong></p>
-            <ul>
-                <li><span style="font-weight: bold;">Bagi Dinas Kesehatan :</span> Sebagai masukan dalam mengevaluasi program yang sedang berjalan</li>
-                <li><span style="font-weight: bold;">Bagi Peneliti Lain :</span> Sebagai literatur yang dapat menambah informasi dan bahan pertimbangan bagi peneliti lain di masa yang akan datang yang lebih spesifik</li>
-                <li><span style="font-weight: bold;">Bagi Masyarakat Umum :</span> Memberikan informasi mengenai hubungan antara hipertensi dan stroke dengan faktor-faktor yang mempengaruhinya faktor-faktor yang mempengaruhinya sehingga masyarakat lebih peka terhadap kesehatan</li>
-            </ul>
-            
+    </header>
+
+    <div class="detail-content">
+        <div class="wrap">
+            <div class="detail-media single">
+                <div class="media-frame">
+                    <img src="Regresi Birespon.jpg" alt="Bivariate logistic regression cover image">
+                </div>
+            </div>
+
+            <div class="detail-body">
+                <div class="detail-block">
+                    <h2>Latar Belakang</h2>
+                    <p>Berdasarkan data BPS yang dikumpulkan dari tahun 2017-2022, ditemukan bahwa jumlah kematian akibat PTM di Indonesia mencapai 7,04 juta kasus (BPS, 2023). Salah satu PTM yang paling banyak diderita oleh penduduk Indonesia adalah hipertensi dan stroke. Menurut data Riskesdas 2018, tercatat prevalensi hipertensi di Indonesia berdasarkan hasil pengukuran pada penduduk berusia &gt;18 tahun mencapai 34,1%. Persentase ini meningkat dari prevalensi hipertensi sebelumnya pada tahun 2013 yang hanya mencapai 25,8%. Sementara itu, prevalensi stroke di Indonesia pada tahun 2013 mencapai 7%, dan meningkat menjadi 10,9% pada tahun 2018. Hipertensi dan stroke dianggap sebagai "komorbiditas" atau penyakit yang dapat terjadi secara bersamaan pada satu individu. Hipertensi merupakan faktor risiko utama yang dapat menyebabkan stroke. Tekanan darah sistolik dan diastolik yang tinggi diketahui dapat meningkatkan risiko stroke.</p>
+                </div>
+
+                <div class="detail-block">
+                    <h2>Tujuan Penelitian</h2>
+                    <p>Penelitian ini bertujuan untuk mendeskripsikan risiko hipertensi dan stroke pada pasien RSUA dan faktor-faktor yang diduga berpengaruh. Penelitian ini akan memodelkan risiko tersebut dengan menggunakan pendekatan regresi logistik birespon berdasarkan faktor-faktor yang diduga berpengaruh. Selain itu, penelitian ini juga akan menganalisis dan menginterpretasikan hasil pemodelan regresi logistik birespon terhadap kejadian hipertensi dan stroke.</p>
+                </div>
+
+                <div class="detail-block">
+                    <h2>Manfaat Penelitian</h2>
+                    <ul>
+                        <li><strong>Bagi Dinas Kesehatan:</strong> Sebagai masukan dalam mengevaluasi program yang sedang berjalan</li>
+                        <li><strong>Bagi Peneliti Lain:</strong> Sebagai literatur yang dapat menambah informasi dan bahan pertimbangan bagi peneliti lain di masa yang akan datang yang lebih spesifik</li>
+                        <li><strong>Bagi Masyarakat Umum:</strong> Memberikan informasi mengenai hubungan antara hipertensi dan stroke dengan faktor-faktor yang mempengaruhinya sehingga masyarakat lebih peka terhadap kesehatan</li>
+                    </ul>
+                </div>
+            </div>
+
             <h3 class="gallery-title">Project Results</h3>
             <div class="gallery">
                 <img src="PPT Regresi Birespon 1.jpg" alt="Regresi Birespon Project 1 Image">
@@ -178,32 +73,40 @@
                 <img src="PPT Regresi Birespon 5.jpg" alt="Regresi Birespon Project 5 Image">
                 <img src="PPT Regresi Birespon 6.jpg" alt="Regresi Birespon Project 6 Image">
                 <img src="PPT Regresi Birespon 7.jpg" alt="Regresi Birespon Project 7 Image">
-                <img src="PPT Regresi Birespon 8.jpg" alt="Regresi Birespon Project 8 Image"> 
+                <img src="PPT Regresi Birespon 8.jpg" alt="Regresi Birespon Project 8 Image">
                 <img src="PPT Regresi Birespon 9.jpg" alt="Regresi Birespon Project 9 Image">
                 <img src="PPT Regresi Birespon 10.jpg" alt="Regresi Birespon Project 10 Image">
                 <img src="PPT Regresi Birespon 11.jpg" alt="Regresi Birespon Project 11 Image">
                 <img src="PPT Regresi Birespon 12.jpg" alt="Regresi Birespon Project 12 Image">
             </div>
 
-            <p><strong>Kesimpulan</strong></p>
-            <ul>
-                <li>Berdasarkan penelitian terhadap 96 pasien rawat jalan di poli jantung dan syaraf RSUA, ditemukan bahwa 60,42% pasien mengalami hipertensi dan 37,50% mengalami stroke. Mayoritas pasien tersebut berjenis kelamin perempuan, berusia 60-74 tahun, memiliki IMT kurang dari 25 kg/m², dikategorikan memiliki tingkat stres normal, aktif secara fisik, dan tidak memiliki riwayat keluarga dengan hipertensi atau stroke.</li>
-                <li>Analisis menunjukkan adanya ketergantungan antara dua variabel respon. Variabel prediktor seperti jenis kelamin, obesitas, tingkat stres, dan riwayat hipertensi dalam keluarga secara signifikan mempengaruhi kejadian hipertensi dan stroke di RSUA. Selain itu, uji kesesuaian untuk model regresi logistik birespon menegaskan bahwa model tersebut sesuai</li>
-                <li>Berdasarkan hasil analisis regresi logistik birespon pada data in-sample, tingkat akurasi mencapai 74,03%, pada data out-sampel menghasilkan tingkat akurasi sebesar 84,21%, dan akurasi all sampel adalah 76,04%</li>
-            </ul>
+            <div class="detail-body">
+                <div class="detail-block">
+                    <h2>Kesimpulan</h2>
+                    <ul>
+                        <li>Berdasarkan penelitian terhadap 96 pasien rawat jalan di poli jantung dan syaraf RSUA, ditemukan bahwa 60,42% pasien mengalami hipertensi dan 37,50% mengalami stroke. Mayoritas pasien tersebut berjenis kelamin perempuan, berusia 60-74 tahun, memiliki IMT kurang dari 25 kg/m&sup2;, dikategorikan memiliki tingkat stres normal, aktif secara fisik, dan tidak memiliki riwayat keluarga dengan hipertensi atau stroke.</li>
+                        <li>Analisis menunjukkan adanya ketergantungan antara dua variabel respon. Variabel prediktor seperti jenis kelamin, obesitas, tingkat stres, dan riwayat hipertensi dalam keluarga secara signifikan mempengaruhi kejadian hipertensi dan stroke di RSUA. Selain itu, uji kesesuaian untuk model regresi logistik birespon menegaskan bahwa model tersebut sesuai</li>
+                        <li>Berdasarkan hasil analisis regresi logistik birespon pada data in-sample, tingkat akurasi mencapai 74,03%, pada data out-sampel menghasilkan tingkat akurasi sebesar 84,21%, dan akurasi all sampel adalah 76,04%</li>
+                    </ul>
+                </div>
 
-            <p><strong>Rekomendasi</strong></p>
-            <ul>
-                <li><span style="font-weight: bold;">Bagi Dinas Kesehatan :</span> Dapat meningkatkan upaya deteksi dini dengan menyediakan program skrining rutin untuk masyarakat berisiko tinggi seperti yang diidentifikasi dalam model dan juga memperkuat edukasi tentang gaya hidup sehat dan pentingnya kontrol rutin kepada individu</li>
-                <li><span style="font-weight: bold;">Bagi Peneliti Lain :</span> Melanjutkan penelitian dengan fokus pada faktor risiko yang lebih spesifik, seperti pola makan, kebiasaan merokok, konsumsi alkohol, yang mungkin belum tercakup dalam model ini dan menambah jumlah sampel</li>
-                <li><span style="font-weight: bold;">Bagi Masyarakat Umum :</span> Pemeriksaan kesehatan secara teratur sangat dianjurkan, terutama bagi mereka yang memiliki riwayat keluarga dengan hipertensi. Individu dengan stres tinggi harus mengelolanya melalui teknik relaksasi, meditasi, atau konseling. Selain itu, bagi yang mengalami obesitas harus menjaga berat badan yang sehat melalui diet seimbang dan olahraga teratur</li>
-            </ul>
-            </p>
+                <div class="detail-block">
+                    <h2>Rekomendasi</h2>
+                    <ul>
+                        <li><strong>Bagi Dinas Kesehatan:</strong> Dapat meningkatkan upaya deteksi dini dengan menyediakan program skrining rutin untuk masyarakat berisiko tinggi seperti yang diidentifikasi dalam model dan juga memperkuat edukasi tentang gaya hidup sehat dan pentingnya kontrol rutin kepada individu</li>
+                        <li><strong>Bagi Peneliti Lain:</strong> Melanjutkan penelitian dengan fokus pada faktor risiko yang lebih spesifik, seperti pola makan, kebiasaan merokok, konsumsi alkohol, yang mungkin belum tercakup dalam model ini dan menambah jumlah sampel</li>
+                        <li><strong>Bagi Masyarakat Umum:</strong> Pemeriksaan kesehatan secara teratur sangat dianjurkan, terutama bagi mereka yang memiliki riwayat keluarga dengan hipertensi. Individu dengan stres tinggi harus mengelolanya melalui teknik relaksasi, meditasi, atau konseling. Selain itu, bagi yang mengalami obesitas harus menjaga berat badan yang sehat melalui diet seimbang dan olahraga teratur</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="back-row">
+                <a href="projects.html" class="btn btn-outline back-to-home"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+            </div>
         </div>
     </div>
-    <a href="projects.html" class="back-to-home">Back</a>
 
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2024 Oktaviani Esty Susanti. All Rights Reserved.</p>
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/oktaviani-esty-susanti-721b1731a/" target="_blank" aria-label="LinkedIn">
