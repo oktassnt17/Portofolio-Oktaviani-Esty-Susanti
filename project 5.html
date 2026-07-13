@@ -3,173 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects 5 | Oktaviani Esty Susanti</title>
+    <title>One-way ANOVA Test Application | Oktaviani Esty Susanti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #2980b9;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 28px;
-            text-align: center;
-        }
-        .content {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .project {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-        .project .image-container {
-            flex: 1; /* Ensures each image container takes up equal space */
-            background-color: #f4f4f4;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .project .image-container h2 {
-            text-align: center;
-            margin-bottom: 10px;
-            color: #2980b9; /* Title color */
-        }
-        .project img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .project-details {
-            margin-top: 40px;
-        }
-        .gallery {
-            display: flex;
-            overflow-x: auto;
-            gap: 20px;
-            padding: 10px 0;
-            white-space: nowrap;
-        }
-        .gallery img {
-            max-width: 600px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .gallery-title {
-            text-align: center; /* Menengahkan teks */
-            color: #333; /* Warna judul */
-            margin-bottom: 0px; /* Spasi bawah untuk pemisahan */
-            font-size: 24px; /* Ukuran font untuk judul */
-            font-weight: bold; /* Tebal font */
-        }
-        .project-details h2 {
-            margin-top: 0;
-            color: #2980b9;
-        }
-        .project-details p {
-            margin-top: 15px;
-            margin-bottom: 0px;
-        }
-        .project-details ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-        .back-to-home {
-            display: block;
-            width: fit-content;
-            margin: 20px auto;
-            padding: 10px 20px;
-            background-color: #2980b9;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-        .back-to-home:hover {
-            background-color: #1c6ea4;
-        }
-        footer {
-            background-color: #2980b9;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-        .social-icons {
-            margin-top: 10px;
-        }
-        .social-icons a {
-            color: #fff;
-            font-size: 1.5rem;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        .social-icons a:hover {
-            color: #2980b9;
-        }
-
-        /* Responsiveness */
-        @media (max-width: 768px) {
-            .project {
-                flex-direction: column;
-            }
-            .gallery {
-                flex-direction: column;
-                align-items: center;
-            }
-            .gallery img {
-                width: 80%;
-            }
-            .back-to-home {
-                padding: 10px 15px;
-                font-size: 0.9rem;
-            }
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <h1>One-way ANOVA Test Application</h1>
+    <header class="site-header">
+        <nav>
+            <a href="index.html" class="brand">
+                <span class="brand-name">Oktaviani Esty Susanti</span>
+                <span class="brand-role">Statistician &amp; Data Analyst</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="infografis.html">Infographics</a></li>
+                <li><a href="sertifikat.html">Certificates</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="content">
-        <div class="project">
-            <div class="image-container">
-                <img src="Aplikasi Anova.jpg" alt="Dashboard 1 Image">
-            </div>
+    <header class="project-detail-header">
+        <div class="wrap">
+            <span class="eyebrow">Case 05 &middot; Statistical Software (R)</span>
+            <h1>One-way ANOVA Test Application</h1>
         </div>
-        <div class="project-details">
-            <p><strong>Tentang Aplikasi</strong></p>
-                Aplikasi ini dirancang untuk memberikan solusi komprehensif dalam melakukan uji ANOVA satu arah menggunakan bahasa pemrograman R, yang ditujukan bagi mahasiswa, peneliti, dan ahli statistik. Aplikasi ini bertujuan untuk menyederhanakan proses pengujian statistik dengan menyediakan antarmuka yang intuitif serta alur kerja yang terstruktur dengan baik, sehingga memudahkan pengguna dalam menganalisis data secara efisien.
-            </p>
-            <p><strong>Menu Utama</strong></p>
-            <ul>
-                <li><span style="font-weight: bold;">Materi Uji ANOVA 1 Arah :</span> Menyediakan konten edukasi mengenai dasar-dasar uji ANOVA satu arah, termasuk definisi, asumsi, persyaratan data, statistik uji, daerah kritis, dan interpretasi. Bagian ini membantu pengguna memahami metode statistik sebelum menerapkannya pada data</li>
-                <li><span style="font-weight: bold;">Panduan Penggunaan :</span> Menawarkan panduan lengkap mengenai cara menggunakan aplikasi, mulai dari input data hingga interpretasi hasil. Panduan ini mencakup petunjuk langkah demi langkah untuk memastikan pengguna dapat menggunakan semua fitur secara efektif</li>
-                <li><span style="font-weight: bold;">Uji Asumsi :</span> Sebelum melakukan uji ANOVA satu arah, aplikasi ini dilengkapi dengan alat untuk menguji asumsi dasar, seperti normalitas. Fitur ini membantu pengguna memastikan bahwa data memenuhi persyaratan yang diperlukan, sehingga analisis ANOVA dapat dilakukan secara valid dan menghasilkan interpretasi yang akurat</li>
-                <li><span style="font-weight: bold;">Uji ANOVA 1 Arah :</span> Fitur khusus untuk melakukan uji ANOVA satu arah, di mana pengguna dapat memasukkan dataset, menentukan hipotesis penelitian, menetapkan nilai alfa, dan menjalankan analisis. Hasil analisis yang dihasilkan mencakup output terperinci, seperti pernyataan hipotesis, daerah kritis, tabel ANOVA, serta keputusan dan kesimpulan, sehingga memudahkan pengguna dalam memahami serta menginterpretasikan hasil pengujian secara sistematis</li>
-            </ul>
-            <p><strong>Tujuan Project</strong></p>
-            Project ini bertujuan untuk mengembangkan platform yang komprehensif dan ramah pengguna guna memfasilitasi pelaksanaan serta interpretasi uji ANOVA satu arah menggunakan R. Aplikasi ini dirancang untuk memastikan hasil yang akurat dan dapat diandalkan, sekaligus menyederhanakan proses analisis statistik agar lebih mudah diakses dan digunakan oleh berbagai kalangan, termasuk mahasiswa, peneliti, dan ahli statistik.
-            </p>
+    </header>
+
+    <div class="detail-content">
+        <div class="wrap">
+            <div class="detail-media single">
+                <div class="media-frame">
+                    <img src="Aplikasi Anova.jpg" alt="One-way ANOVA application cover image">
+                </div>
+            </div>
+
+            <div class="detail-body">
+                <div class="detail-block">
+                    <h2>Tentang Aplikasi</h2>
+                    <p>Aplikasi ini dirancang untuk memberikan solusi komprehensif dalam melakukan uji ANOVA satu arah menggunakan bahasa pemrograman R, yang ditujukan bagi mahasiswa, peneliti, dan ahli statistik. Aplikasi ini bertujuan untuk menyederhanakan proses pengujian statistik dengan menyediakan antarmuka yang intuitif serta alur kerja yang terstruktur dengan baik, sehingga memudahkan pengguna dalam menganalisis data secara efisien.</p>
+                </div>
+
+                <div class="detail-block">
+                    <h2>Menu Utama</h2>
+                    <ul>
+                        <li><strong>Materi Uji ANOVA 1 Arah:</strong> Menyediakan konten edukasi mengenai dasar-dasar uji ANOVA satu arah, termasuk definisi, asumsi, persyaratan data, statistik uji, daerah kritis, dan interpretasi. Bagian ini membantu pengguna memahami metode statistik sebelum menerapkannya pada data</li>
+                        <li><strong>Panduan Penggunaan:</strong> Menawarkan panduan lengkap mengenai cara menggunakan aplikasi, mulai dari input data hingga interpretasi hasil. Panduan ini mencakup petunjuk langkah demi langkah untuk memastikan pengguna dapat menggunakan semua fitur secara efektif</li>
+                        <li><strong>Uji Asumsi:</strong> Sebelum melakukan uji ANOVA satu arah, aplikasi ini dilengkapi dengan alat untuk menguji asumsi dasar, seperti normalitas. Fitur ini membantu pengguna memastikan bahwa data memenuhi persyaratan yang diperlukan, sehingga analisis ANOVA dapat dilakukan secara valid dan menghasilkan interpretasi yang akurat</li>
+                        <li><strong>Uji ANOVA 1 Arah:</strong> Fitur khusus untuk melakukan uji ANOVA satu arah, di mana pengguna dapat memasukkan dataset, menentukan hipotesis penelitian, menetapkan nilai alfa, dan menjalankan analisis. Hasil analisis yang dihasilkan mencakup output terperinci, seperti pernyataan hipotesis, daerah kritis, tabel ANOVA, serta keputusan dan kesimpulan, sehingga memudahkan pengguna dalam memahami serta menginterpretasikan hasil pengujian secara sistematis</li>
+                    </ul>
+                </div>
+
+                <div class="detail-block">
+                    <h2>Tujuan Project</h2>
+                    <p>Project ini bertujuan untuk mengembangkan platform yang komprehensif dan ramah pengguna guna memfasilitasi pelaksanaan serta interpretasi uji ANOVA satu arah menggunakan R. Aplikasi ini dirancang untuk memastikan hasil yang akurat dan dapat diandalkan, sekaligus menyederhanakan proses analisis statistik agar lebih mudah diakses dan digunakan oleh berbagai kalangan, termasuk mahasiswa, peneliti, dan ahli statistik.</p>
+                </div>
+            </div>
+
             <h3 class="gallery-title">Application Menu</h3>
             <div class="gallery">
                 <img src="Anova 1.jpg" alt="Anova Project 1 Image">
@@ -192,11 +87,14 @@
                 <img src="Anova 18.jpg" alt="Anova Project 18 Image">
                 <img src="Anova 19.jpg" alt="Anova Project 19 Image">
             </div>
+
+            <div class="back-row">
+                <a href="projects.html" class="btn btn-outline back-to-home"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+            </div>
         </div>
     </div>
-    <a href="projects.html" class="back-to-home">Back</a>
 
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2024 Oktaviani Esty Susanti. All Rights Reserved.</p>
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/oktaviani-esty-susanti-721b1731a/" target="_blank" aria-label="LinkedIn">
