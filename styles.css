@@ -721,7 +721,7 @@ section {
 }
 
 .detail-body {
-  max-width: 780px;
+  max-width: none;
 }
 
 .detail-block {
