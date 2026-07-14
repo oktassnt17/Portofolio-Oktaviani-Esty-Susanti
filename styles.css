@@ -810,12 +810,25 @@ section {
 
 .back-row {
   padding: 28px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  border-top: 1px solid var(--line);
+  margin-top: 12px;
 }
 
-.back-to-home {
+.back-to-home,
+.next-project {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+}
+
+.next-project {
+  flex-direction: row-reverse;
+  margin-left: auto;
 }
 
 /* ---------- Infographic viewer ---------- */
@@ -906,6 +919,9 @@ section {
   .timeline::before { left: 17px; }
   .timeline-item { grid-template-columns: 34px 1fr; column-gap: 14px; }
   .timeline-card { padding: 20px; }
+  .back-row { flex-direction: column; align-items: stretch; }
+  .next-project { margin-left: 0; justify-content: center; }
+  .back-to-home { justify-content: center; }
   .capability-grid { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
   .certificate-grid { grid-template-columns: 1fr; }
